@@ -25,4 +25,8 @@ public class UserServiceTest {
         Integer usernameCode = 0;
         assertEquals("0", userService.FirstName(usernameCode));
     }
+    public void userFirstNameWhenUserCodeIsOne() {
+        Integer usernameCode = 1;
+        assertEquals("1", userService.FirstName(usernameCode));
+    }
 }
