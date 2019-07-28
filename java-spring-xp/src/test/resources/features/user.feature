@@ -3,6 +3,6 @@ Feature: User service
     when they give any random number which is divisible by 3, 5 and both.
 
 Scenario: Client receives user firstname
-  Given the user has full name 'Fizz Buzz'
+  Given the User has full name "Fizz Buzz"
   When the Client request User servie /user/firstname$ with code 3
-  Then the Client receives user first name 'Fizz'
+  Then the Client receives User first name "Fizz"
