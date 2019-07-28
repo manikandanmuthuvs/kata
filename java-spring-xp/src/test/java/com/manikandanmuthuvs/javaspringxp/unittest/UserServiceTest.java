@@ -21,12 +21,16 @@ public class UserServiceTest {
     private UserService userService;
 
     @Test
-    public void userFirstNameWhenUserCodeDivisibleByThree() {
+    public void userFirstNameWhenUsernameCodeIsDivisibleByThree() {
         Integer usernameCode = 3;
         assertEquals("Fizz", userService.UserName(usernameCode));
     }
-    public void userLastNameWhenUserCodeDivisibleByFive() {
+    public void userLastNameWhenUsernameCodeIsDivisibleByFive() {
         Integer usernameCode = 5;
         assertEquals("Buzz", userService.UserName(usernameCode));
+    }
+    public void userFullNameWhenUsernameCodeDivisibleByThreeAndFive() {
+        Integer usernameCode = 15;
+        assertEquals("Fizz Buzz", userService.UserName(usernameCode));
     }
 }
