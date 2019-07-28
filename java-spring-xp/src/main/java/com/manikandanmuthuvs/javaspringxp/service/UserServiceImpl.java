@@ -7,6 +7,8 @@ public class UserServiceImpl implements UserService {
             return "0";
         } else if (usernameCode == 1) {
             return "1";
+        } else if (usernameCode == 2) {
+            return "2";
         }
         else{
             return "Error";
