@@ -38,4 +38,12 @@ public class UserServiceTest {
         Integer usernameCode = 3;
         assertEquals("Fizz", userService.FirstName(usernameCode));
     }
+    public void userFirstNameWhenUserCodeDivisibleByThree() {
+        Integer usernameCode = 3;
+        assertEquals("Fizz", userService.FirstName(usernameCode));
+    }
+    public void userLastNameWhenUserCodeDivisibleByFive() {
+        Integer usernameCode = 5;
+        assertEquals("Buzz", userService.Lastname(usernameCode));
+    }
 }
