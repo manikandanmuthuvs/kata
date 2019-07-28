@@ -1,4 +1,4 @@
-package com.manikandanmuthuvs.javaspringxp;
+package com.manikandanmuthuvs.javaspringxp.integrationtestrunner;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.client.ClientHttpRequest;

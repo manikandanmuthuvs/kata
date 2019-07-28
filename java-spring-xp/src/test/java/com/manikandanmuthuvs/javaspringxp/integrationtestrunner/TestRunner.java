@@ -1,4 +1,4 @@
-package com.manikandanmuthuvs.javaspringxp;
+package com.manikandanmuthuvs.javaspringxp.integrationtestrunner;
 
 import org.junit.runner.RunWith;
 

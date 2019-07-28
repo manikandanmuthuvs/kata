@@ -1,4 +1,4 @@
-package com.manikandanmuthuvs.javaspringxp;
+package com.manikandanmuthuvs.javaspringxp.integrationtestrunner;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +19,7 @@ public class ResponseResults {
         this.body = stringWriter.toString();
     }
 
-    ClientHttpResponse getTheResponse() {
+    public ClientHttpResponse getTheResponse() {
         return theResponse;
     }
 
