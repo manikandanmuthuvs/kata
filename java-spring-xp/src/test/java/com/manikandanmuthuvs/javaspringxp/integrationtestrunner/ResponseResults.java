@@ -23,7 +23,7 @@ public class ResponseResults {
         return theResponse;
     }
 
-    String getBody() {
+    public String getBody() {
         return body;
     }
 }

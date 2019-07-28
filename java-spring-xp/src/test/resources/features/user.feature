@@ -8,6 +8,11 @@ Scenario: Client receives user firstname
   Then the Client receives User first name "Fizz"
 
 Scenario: Client receives user lastname
-  Given the User has full name "Buzz"
+  Given the User has full name "Fizz Buzz"
   When the Client request User servie /user$ with username code divisible by 5
-  Then the Client receives User first name "Buzz"
+  Then the Client receives User last name "Buzz"
+
+Scenario: Client receives user fullname
+  Given the User has full name "Fizz Buzz"
+  When the Client request User servie /user$ with username code divisible by both 3 and 5
+  Then the Client receives User full name "Fizz Buzz"
