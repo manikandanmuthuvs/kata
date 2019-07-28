@@ -1,5 +1,5 @@
 package com.manikandanmuthuvs.javaspringxp.service;
 
 public interface UserService {
-    public String FirstName(Integer usernameCode);
+    public String UserName(Integer usernameCode);
 }

@@ -21,29 +21,12 @@ public class UserServiceTest {
     private UserService userService;
 
     @Test
-    public void userFirstNameWhenUserCodeIsZero() {
-        Integer usernameCode = 0;
-        assertEquals("0", userService.FirstName(usernameCode));
-    }
-    public void userFirstNameWhenUserCodeIsOne() {
-        Integer usernameCode = 1;
-        assertEquals("1", userService.FirstName(usernameCode));
-    }
-
-    public void userFirstNameWhenUserCodeIsTwo() {
-        Integer usernameCode = 2;
-        assertEquals("2", userService.FirstName(usernameCode));
-    }
-    public void userFirstNameWhenUserCodeIsThree() {
-        Integer usernameCode = 3;
-        assertEquals("Fizz", userService.FirstName(usernameCode));
-    }
     public void userFirstNameWhenUserCodeDivisibleByThree() {
         Integer usernameCode = 3;
-        assertEquals("Fizz", userService.FirstName(usernameCode));
+        assertEquals("Fizz", userService.UserName(usernameCode));
     }
     public void userLastNameWhenUserCodeDivisibleByFive() {
         Integer usernameCode = 5;
-        assertEquals("Buzz", userService.Lastname(usernameCode));
+        assertEquals("Buzz", userService.UserName(usernameCode));
     }
 }

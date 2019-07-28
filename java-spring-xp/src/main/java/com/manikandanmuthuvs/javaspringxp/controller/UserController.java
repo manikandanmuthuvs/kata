@@ -13,10 +13,10 @@ public class UserController {
     
     private UserService userService;
 
-    @GetMapping("/user/firstname/")
+    @GetMapping("/user/")
     @ResponseBody
-    public String GetFirstName(@RequestParam Integer usernameCode) {
-        return userService.FirstName(usernameCode);
+    public String GetUserName(@RequestParam Integer usernameCode) {
+        return userService.UserName(usernameCode);
     }
 
 }

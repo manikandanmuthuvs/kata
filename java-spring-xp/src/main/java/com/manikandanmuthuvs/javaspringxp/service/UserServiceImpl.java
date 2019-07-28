@@ -2,15 +2,12 @@ package com.manikandanmuthuvs.javaspringxp.service;
 
 public class UserServiceImpl implements UserService {
     
-    public String FirstName(Integer usernameCode) {
-        if(usernameCode == 0){
-            return "0";
-        } else if (usernameCode == 1) {
-            return "1";
-        } else if (usernameCode == 2) {
-            return "2";
-        }else if (usernameCode % 3 == 0) {
+    public String UserName(Integer usernameCode) {
+        if (usernameCode % 3 == 0) {
             return "Fizz";
+        } 
+        else if (usernameCode % 5 == 0) {
+            return "Buzz";
         }
         else{
             return "Error";
