@@ -4,5 +4,10 @@ Feature: User service
 
 Scenario: Client receives user firstname
   Given the User has full name "Fizz Buzz"
-  When the Client request User servie /user/firstname$ with code 3
+  When the Client request User servie /user$ with username code divisible by 3
   Then the Client receives User first name "Fizz"
+
+Scenario: Client receives user lastname
+  Given the User has full name "Buzz"
+  When the Client request User servie /user$ with username code divisible by 5
+  Then the Client receives User first name "Buzz"
