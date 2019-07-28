@@ -9,6 +9,8 @@ public class UserServiceImpl implements UserService {
             return "1";
         } else if (usernameCode == 2) {
             return "2";
+        }else if (usernameCode % 3 == 0) {
+            return "Fizz";
         }
         else{
             return "Error";
